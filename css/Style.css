@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 /*The Css was gained from Codepen.io by Ash Neilson on her Basic Responsive Menu*/
-
 /*Css Variables*/
 :root{
     --primary-color: #b90415;
     --primary-color-hover: #d3071b;
     --secondary-color: #103063;
     --secondary-color-hover: #143f85;
+    --tertiary-color: #8400ff;
+    --tertiary-color-hover: #a200ff;
     --light-color: #f4f4f4;
+    --dark-color:#000000;
 }
 
 body {
@@ -140,12 +142,21 @@ footer .footer-botton {
 }
 
 .btn-secondary{
-    background-color: var(--primary-color)
+    background-color: var(--secondary-color)
 }
 
 .btn-secondary:hover{
     background: var(--secondary-color-hover)
 }
+
+.btn-tertiary{
+    background-color: var(--tertiary-color)
+}
+
+.btn-tertiary:hover{
+    background: var(--tertiary-color-hover)
+}
+
 
 /*Text Colors*/
 
@@ -165,6 +176,11 @@ footer .footer-botton {
     background: var(--light-color);
     color: #333
 }
+
+.bg-dark{
+    background: #cccccc
+}
+
 
 .mb{
     margin-bottom: 1rem;
@@ -191,9 +207,23 @@ footer .footer-botton {
     display: inline;
     float: left;
   }
+
+#logo{
+    height: 35px;
+    width: 30px;
+    padding: 15%
+}
+
+#suit{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 39px
+}
+
   nav a {
     display: inline-block;
-    width: 100px;
+    width: 250px;
     text-align: center;
     text-decoration: none;
     padding: 10px 0;
